@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>Image Gallery</title>
+</head>
+<style>
+    *
+    {
+        box-sizing: border-box;
+    }
+    body,html{
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        background: url('background.jpg');
+        background-size: 100% 100%;
+    }
+    h1
+    {
+        font-size: 6em;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        color:#ecf0f1;
+        font-family: 'Cookie', cursive;
+        border: 1px solid #ecf0f1;
+        padding:10px;
+
+    }
+    span
+    {
+        font-size: 12px;
+        bottom: 12px;
+        position: absolute;
+        right: 58px;
+    }
+    .container
+    {
+        width: 30%;
+        height: 6%;
+        bottom:50px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+       
+      
+
+    }
+     a{
+        cursor: pointer;
+        transition: 0.4s ease-in;
+
+    }
+    a:hover
+    {
+        transform: scale(3);
+        opacity: 2;
+        z-index: 1;
+
+        
+    }
+    #img1,#img2,#img3,#img4,#img5,#img6,#img7
+    {
+        height: 80%;
+        width: 35px;
+        position: absolute;
+        border: 1px solid #ecf0f1;
+        float: right;
+        margin: 4px;
+    
+    }
+    #img1
+    {
+        background:url('img/1.jpg');
+        background-size: 100% 100%;
+        left: 4%;
+
+
+    
+    }
+    #img2
+    {
+        background: url('img/2.jpg');
+        background-size: 100% 100%;
+        left: 14%;
+
+    }
+    #img3
+    {
+        background: url('img/3.jpg');
+        background-size: 100% 100%;
+        left: 24%;
+    }
+    #img4
+    {
+        background: url('img/4.jpg');
+        background-size: 100% 100%;
+        left: 34%;
+    }
+    #img5
+    {
+        background: url('img/5.jpg');
+        background-size: 100% 100%;
+        left: 44%;
+    }
+    #img6
+    {
+        background: url('img/6.jpg');
+        background-size: 100% 100%;
+        left: 54%;
+    }
+    #img7
+    {
+        background: url('img/7.jpg');
+        background-size: 100% 100%;
+        left: 64%;
+
+    }
+
+
+</style>
+<body>
+    <h1>Image Gallery <span>Prashant Bhadauriya </span></h1>
+    <div class="container">
+        <a onclick="image1()" id="img1"></a>
+        <a onclick="image2()" id="img2"></a>
+        <a onclick="image3()" id="img3"></a>
+        <a onclick="image4()" id="img4"></a>
+        <a onclick="image5()" id="img5"></a>
+        <a onclick="image6()" id="img6"></a>
+        <a onclick="image7()" id="img7"></a>
+       
+    </div>
+    <script>
+    function image1(){
+        document.body.style.background="url('img/1.jpg')";
+        document.body.style.backgroundSize="100% 100%";
+        
+        
+    }
+    function image2(){
+        document.body.style.background="url('img/2.jpg')";
+        document.body.style.backgroundSize="100% 100%";
+    }
+    function image3(){
+        document.body.style.background="url('img/3.jpg')";
+        document.body.style.backgroundSize="100% 100%";
+        
+    }
+    function image4(){
+        document.body.style.background="url('img/4.jpg')";
+        document.body.style.backgroundSize="100% 100%";
+        
+    }
+    function image5(){
+        document.body.style.background="url('img/5.jpg')";
+        document.body.style.backgroundSize="100% 100%";
+        
+    }
+    function image6(){
+        document.body.style.background="url('img/6.jpg')";
+        document.body.style.backgroundSize="100% 100%";
+    }
+    function image7(){
+        document.body.style.background="url('img/7.jpg')";
+        document.body.style.backgroundSize="100% 100%";
+    }
+    </script>
+</body>
+</html>
